@@ -2,7 +2,7 @@ const fs = require("fs");
 const { exec, execSync } = require("child_process");
 const core = require("@actions/core");
 
-const excalidrawDir = `${__dirname}/../packages/excalidraw`;
+const excalidrawDir = `../packages/excalidraw`;
 const excalidrawPackage = `${excalidrawDir}/package.json`;
 const pkg = require(excalidrawPackage);
 const isPreview = process.argv.slice(2)[0] === "preview";
@@ -15,6 +15,7 @@ const publish = () => {
   const tag = isPreview ? "preview" : "next";
   console.info('publish:',pkg.name,tag)
   console.info('excalidrawDir:',excalidrawDir)
+  console.info('excalidrawPackage:',excalidrawPackage)
   try {
     execSync(`yarn  --frozen-lockfile`);
     execSync(`yarn run build:esm`, { cwd: excalidrawDir });
