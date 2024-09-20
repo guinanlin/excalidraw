@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "excalidraw-zh",
+  "name": "@goodhawk/excalidraw",
   "version": "0.17.1",
   "main": "./dist/prod/index.js",
   "type": "module",
