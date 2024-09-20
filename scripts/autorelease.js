@@ -2,7 +2,7 @@ const fs = require("fs");
 const { exec, execSync } = require("child_process");
 const core = require("@actions/core");
 
-const excalidrawDir = `../packages/excalidraw`;
+const excalidrawDir = `${__dirname}/../packages/excalidraw`; // 定义excalidraw目录路径
 const excalidrawPackage = `${excalidrawDir}/package.json`;
 const pkg = require(excalidrawPackage);
 const isPreview = process.argv.slice(2)[0] === "preview";
