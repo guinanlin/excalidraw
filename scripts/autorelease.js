@@ -13,7 +13,7 @@ const getShortCommitHash = () => {
 
 const publish = () => {
   const tag = isPreview ? "preview" : "next";
-
+  console.info('publish:',pkg.name,tag)
   try {
     execSync(`yarn  --frozen-lockfile`);
     execSync(`yarn run build:esm`, { cwd: excalidrawDir });

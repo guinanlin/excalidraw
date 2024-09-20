@@ -1,6 +1,6 @@
 {
-  "name": "@goodhawk/excalidraw",
-  "version": "0.17.1",
+  "name": "@excalidraw/excalidraw/v/",
+  "version": "z.17.1",
   "main": "./dist/prod/index.js",
   "type": "module",
   "module": "./dist/prod/index.js",
