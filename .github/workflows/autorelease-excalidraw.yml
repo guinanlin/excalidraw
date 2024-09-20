@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - release
-
+  workflow_dispatch:
 jobs:
   Auto-release-excalidraw-next:
     runs-on: ubuntu-latest
