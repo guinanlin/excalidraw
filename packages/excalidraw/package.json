@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@goodhawk/excalidraw",
   "version": "0.17.1",
   "main": "./dist/prod/index.js",
